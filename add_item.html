@@ -1,0 +1,93 @@
+
+
+<!doctype html>
+<!-- Ejiroghene Efevberha
+// 	VFW 1309
+ 	Web App Part 3 (Project 3 )
+	Talent Scout Assistant App */ -->
+<html lang="en">
+	<head>		
+		<meta charset="utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=yes, width=device-width"/> 
+		<link href="css/styles.css" rel="stylesheet" />		
+		<title>Talent Scout Assistant App</title>
+   	</head>
+				<body>
+				
+	         		<h1>Players To Watch</h1>
+	         		
+	         			
+	         			<fieldset> 
+							<legend>
+							<a href="#" id="clearAll">Clear Data</a>&nbsp;<a href="#" id="showAll">Display Data</a>
+							<a href="file:add_item.html" id="addNew" style="display:none;" >Add New Player</a>
+							</legend>
+						
+								<form action="#" method="post" id="playerForm">
+             						<ul id="allerrors"></ul>
+            						<ul> 
+            							<li id="select"><label for="category">age category:</label><br /></li>
+										<li>
+											<label for="firstname">first name:</label>
+											<input type="text" id="firstname" name="firstname"/>
+										</li>
+										<li>
+											<label for="lastname">last name:</label>
+											<input type="text" id="lastname" name="lastname"/>
+										</li>
+										<li>
+											<label for="email">agent email:</label>
+											<input type="email" id="email" name="email"/>
+										</li>
+										<li>
+											<label for="phone">agent phone:</label>
+											<input type="tel" id="phone" name="phone"/>
+										</li>
+            							<li>
+											<label>Field Position:</label>
+          								</li>
+         							    <p>								
+         								    <label for = "forward">forward:</label>            
+        								    <input type = "radio" value = "forward" name = "position" checked/>
+         							          
+										
+										    <label for = "midfield">midfield:</label>            
+         								    <input type = "radio" value = "midfield" name = "position"/>
+         								
+            							
+										    <label for = "defense">defense:</label>            
+         								    <input type = "radio" value = "defense" name = "position"/>
+         								</p>
+         								<li>
+										    <label for = "urgency">urgent:</label>            
+         								    <input type = "checkbox" id = "urgency" value="Yes" name = "urgency"/>
+         								</li>
+         								<li>
+										 	<label for="rating">player rating:</label>
+											<input type="range" min="1" max="10" id= "rating" name="rating"/>
+										</li>
+										<li> 
+											<label for="date">Observation date:</label>
+											<input type="date" min="2013-01-01" max="2018-01-01" 
+											id="date" name="date" required aria-required="true" />
+										</li>
+										<li>
+										 	<label for="notes">Notes:</label>
+											<input type="textarea" min="1" max="10" id = "notes" name="notes" rows="10" cols="100"/>
+										</li>
+									</ul>
+									
+								</form>
+            			</fieldset>	
+            						
+					
+					<input type="submit" id="submit" value="Submit"/>
+					
+					
+					
+				<script src="js/main.js" type="text/javascript"></script>
+								
+			</body>
+
+</html>
